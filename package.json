@@ -1,0 +1,19 @@
+{
+  "name": "mean-votos",
+  "version": "1.0.0",
+  "description": "Projetos com tecnologias dentro do MEAN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniloJava/MEAN-Projeto.git"
+  },
+  "author": "DaniloJava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniloJava/MEAN-Projeto/issues"
+  },
+  "homepage": "https://github.com/daniloJava/MEAN-Projeto#readme"
+}
