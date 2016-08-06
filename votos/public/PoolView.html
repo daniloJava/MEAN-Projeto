@@ -1,0 +1,44 @@
+
+    <!doctype html>
+    <html ng-app="poolApp">
+      <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        
+         <!--  
+				Está pe o script que contem o controller 
+				onde tem as funçoes de antes do post.
+              
+          --> 
+         <script src="/javascripts/PoolController.js"></script>
+      </head>
+      <body>
+        <h1>Insira seu voto</h1>
+          <div ng-controller="PoolController as pc">
+              <form ng-submit="pc.addVote()">
+                  
+                  <div class="form-group">
+                      <input type='text' placeholder='Name' class="form-control" ng-model='pc.name' />
+                  </div>
+                  <div class="form-group">
+                      <input type='tel' placeholder='Cadidate' class="form-control" ng-model='pc.candidate' />
+                  </div>
+
+                  <input class="btn-primary" type="submit" value="Add vote">
+              </form>
+
+                  <h1>Votos</h1>
+                  <table class="table table-striped">
+                      <tr>
+                          <th>Nome</th>
+                          <th>cadidato</th>
+                      </tr>
+                      <tr ng-repeat='v in pc.votes'>
+                          <td>{{v.name}}</td>
+                          <td>{{v.candidate}}</td>
+                      </tr>
+                  </table>
+
+          </div>
+      </body>
+    </html>
+
